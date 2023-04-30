@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+:root {
+  --color-bg: #efefef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-bg);
+}
+
+img {
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.avatar {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #b2b2b2;
+  border-radius: 50%;
+  overflow: hidden;
+  text-decoration: none;
+  -webkit-transition: -webkit-transform .08s ease-in;
+  transition: -webkit-transform .08s ease-in;
+  -o-transition: -o-transform .08s ease-in;
+  -moz-transition: transform .08s ease-in, -moz-transform .08s ease-in;
+  transition: transform .08s ease-in;
+  transition: transform .08s ease-in, -webkit-transform .08s ease-in, -moz-transform .08s ease-in, -o-transform .08s ease-in;
+}
+
+.avatar-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+
+.avatar-group__item:not(:first-child) {
+  margin-left: -10%;
+}
+
+.avatar-group__item .avatar:is(:hover, :focus),
+.avatar-group__item:is(:hover, :active, :focus-within) > * {
+  -webkit-transform: translateY(-10%);
+     -moz-transform: translateY(-10%);
+      -ms-transform: translateY(-10%);
+       -o-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.avatar-group__item .avatar:is(:hover, :focus) {
+  z-index: 1;
+}
+
+.avatar-image, .avatar-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.avatar-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.avatar-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: 700;
+}
+
+.nft-card {
+  height: 40rem;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-radius: 2rem;
+}
+
+.nft-card__container {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  outline: 1px solid #1a1a1a;
+  z-index: 1;
+}
+
+.nft-card__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.nft-card__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nft-card__header .avatar-group {
+  padding-left: 1.5rem;
+}
+
+.nft-card__header__right {
+  position: relative;
+  padding: 1rem 2rem 1rem 0rem;
+  background-color: #000000;
+  z-index: 1;
+}
+
+.nft-card__header__right__curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  z-index: -1;
+  border-bottom-left-radius: 1.5rem;
+  -webkit-transform-origin: left bottom;
+     -moz-transform-origin: left bottom;
+      -ms-transform-origin: left bottom;
+       -o-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: translateX(-1.5rem) skew(20deg);
+     -moz-transform: translateX(-1.5rem) skew(20deg);
+      -ms-transform: translateX(-1.5rem) skew(20deg);
+       -o-transform: translateX(-1.5rem) skew(20deg);
+          transform: translateX(-1.5rem) skew(20deg);
+}
+
+.nft-card__header__right__curve::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  background-color: transparent;
+  -webkit-transform: translateX(-100%);
+     -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+       -o-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-box-shadow: 1.5rem -1.5rem 0 1.5rem #000000;
+          box-shadow: 1.5rem -1.5rem 0 1.5rem #000000;
+}
+
+.nft-card__header__right__text {
+  color: #ffffff;
+  margin-bottom: 0.2em;
+}
+
+.nft-card__header__right__title {
+  color: #ccff00;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */
